@@ -1,0 +1,134 @@
+:root {
+  /* Primary color */
+
+--Dark-cyan-color: hsl(185, 75%, 39%);
+--Very-dark-desaturated-blue-color: hsl(229, 23%, 23%);
+--Dark-grayish-blue-color: hsl(227, 10%, 46%);
+
+/* Neutral color */
+
+--Dark-gray-color: hsl(0, 0%, 59%);
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--Dark-cyan-color);
+  background-image: url("../images/bg-pattern-top.svg"), url("../images/bg-pattern-bottom.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: right 52vw bottom 35vh, left 48vw top 52vh;
+  font-family: "Kumbh Sans", sans-serif;
+  font-size: 18px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: var(--Very-dark-desaturated-blue-color);
+}
+
+img {
+  max-width: 100%;
+}
+
+/* Card */
+
+.card-form {
+  max-width: 370px;
+  margin: 10rem auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+}
+
+.card-form img {
+  width: 100%;
+  height: 100%;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  background: #fff;
+  width: 100%;
+  border-radius: 20px;
+}
+
+.profil-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.profil-image img {
+  position: relative;
+  top: -50px;
+  width: 100px;
+  border-radius: 60px;
+  border: 5px solid #fff;
+}
+
+.profil-name-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profil-name {
+  position: absolute;
+  top: 378px;
+}
+
+.profil-name p {
+  color: var(--Dark-gray-color);
+  margin-left: 10px;
+}
+
+.profil-content .london {
+  font-size: 0.9rem;
+  color: var(--Dark-gray-color);
+  text-align: center;
+  margin-top: 0.2rem;
+}
+
+.horizontal-rule {
+  border: 0.5px solid var(--Dark-gray-color);
+  width: 100%;
+  opacity: 0.3;
+  margin-top: 1.5rem;
+}
+
+.card-stats {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  gap: 50px;
+  padding: 20px;
+}
+
+.card-stats .stats-display {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.card-stats .stats-title {
+  font-size: 0.7rem;
+  font-weight: 400;
+  color: var(--Dark-gray-color);
+  margin-top: 0.5rem;
+}
